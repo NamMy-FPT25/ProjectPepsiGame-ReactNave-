@@ -71,7 +71,7 @@ const SignUpScreen = () => {
                   rules={{
                     validate: value => value == pwd || 'Password do not match',
                   }}/>
-     <CustomButton text="Register" onPress={handleSubmit(onRegisterPressed)} />
+     <CustomButton text="Register" onPress={handleSubmit(onSignInPress)} />
      <Text style={styles.text}> 
           By register, you confirm that you account{' '}
           <Text style={styles.link} onPress={onTermOfUsePressed}>Team of user</Text> and {' '}

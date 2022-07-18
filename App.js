@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-web';
 
 import Navigation from './src/navigation';
+import HomeScreen from './src/screens/HomeScreen';
+import SignInScreen from './src/screens/SignInScreen';
 
 export default function App() {
   return (

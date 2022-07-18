@@ -1,12 +1,14 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+export {default} from './HomeScreen'
 
-const index = () => {
-  return (
-    <View>
-      <Text style={{fontSize: 24, alignSelf: 'center'}}>Home Page</Text>
-    </View>
-  );
-};
+// import { View, Text } from 'react-native'
+// import React from 'react'
 
-export default index;
+// const index = () => {
+//   return (
+//     <View>
+//       <Text style={{fontSize: 24, alignSelf: 'center'}}>Home Page</Text>
+//     </View>
+//   );
+// };
+
+// export default index;
