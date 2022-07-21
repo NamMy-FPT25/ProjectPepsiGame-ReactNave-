@@ -26,9 +26,32 @@ const HomeScreen = () => {
     } 
     const onPlaygammePressed = () =>{
         console.warn("Chơi Ngay");
+        Alert.alert(
+          // Title
+          'Bạn muốn sử dụng lượt chơi nào?',
+          // Body
+          'Choose option',
+          [
+            {
+              text: 'Lượt chơi miễn phí', 
+              onPress: () => {
+                // console.warn("Lượt chơi miễn phí");
+                navigation.navigate('GameFree');
+              }
+            },
+            {
+              text: 'Lượt chơi quy đổi',
+              onPress: () => {
+                // console.warn('Lượt chơi quy đổi');
+                navigation.navigate('GameFree');
+              }
+            }
+          ]
+        )
     } 
     const onCodeQRPressed = () =>{
-      console.warn("Quét Mã");
+      // console.warn("Quét Mã");
+      navigation.navigate('ScansCode');
     } 
     const onCollectionPressed = () =>{
       console.warn("Bộ Sưu Tập");

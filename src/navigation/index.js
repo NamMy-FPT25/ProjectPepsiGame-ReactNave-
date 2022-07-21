@@ -10,6 +10,10 @@ import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import NewPasswordScreen from '../screens/NewPasswordScreen';
 import HomeScreen from '../screens/HomeScreen';
 import GuideScreen from '../screens/GuideScreen';
+import AllNavigationScreen from '../screens/AllNavigationScreen/GameFree';
+import Exchange from '../screens/AllNavigationScreen/Exchange';
+import GameFree1 from '../screens/AllNavigationScreen/GameFree1';
+import scansCode from '../screens/AllNavigationScreen/scansCode';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +28,10 @@ const Navigation = () => {
         <Stack.Screen name="NewPassword" component={NewPasswordScreen}/>
         <Stack.Screen name="HomePage" component={HomeScreen}/>
         <Stack.Screen name="Guide" component={GuideScreen}/>
+        <Stack.Screen name="GameFree" component={AllNavigationScreen}/>
+        <Stack.Screen name="Exchange" component={Exchange}/>
+        <Stack.Screen name="GameFree1" component={GameFree1}/>
+        <Stack.Screen name="ScansCode" component={scansCode}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
