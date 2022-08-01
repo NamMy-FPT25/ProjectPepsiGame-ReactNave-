@@ -54,10 +54,12 @@ const HomeScreen = () => {
       navigation.navigate('ScansCode');
     } 
     const onCollectionPressed = () =>{
-      console.warn("Bộ Sưu Tập");
+      // console.warn("Bộ Sưu Tập");
+      navigation.navigate('Collection');
     } 
     const onGiftPressed = () =>{
-      console.warn("Chi tiết quà tặng");
+      // console.warn("Chi tiết quà tặng");
+      navigation.navigate('DetailGift');
     } 
     // const onLogOutPressed = () =>{
     //   navigation.navigate('SignIn');

@@ -14,6 +14,9 @@ import AllNavigationScreen from '../screens/AllNavigationScreen/GameFree';
 import Exchange from '../screens/AllNavigationScreen/Exchange';
 import GameFree1 from '../screens/AllNavigationScreen/GameFree1';
 import scansCode from '../screens/AllNavigationScreen/scansCode';
+import Collection from '../screens/AllNavigationScreen/Collection';
+import DetailGift from '../screens/AllNavigationScreen/DetailGift';
+import Programrules from '../screens/AllNavigationScreen/Programrules';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +35,9 @@ const Navigation = () => {
         <Stack.Screen name="Exchange" component={Exchange}/>
         <Stack.Screen name="GameFree1" component={GameFree1}/>
         <Stack.Screen name="ScansCode" component={scansCode}/>
+        <Stack.Screen name="Collection" component={Collection}/>
+        <Stack.Screen name="DetailGift" component={DetailGift}/>
+        <Stack.Screen name="Programrules" component={Programrules}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

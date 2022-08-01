@@ -10,7 +10,11 @@ const Guide = () => {
     const onBackPressed = () =>{
         // console.warn("Hướng dẫn");
         navigation.navigate('HomePage');
-      }
+    }
+    const onGuidePressed = () =>{
+      // console.warn("Hướng dẫn");
+      navigation.navigate('Programrules');
+  }
 
     const twoOptionAlert = () =>{
         Alert.alert(
@@ -44,11 +48,11 @@ const Guide = () => {
       <Image    
         source={Banner} 
         style={{width: '80%', height: null, aspectRatio: 750/460, resizeMode: 'cover', top: 32}}/>
-      <Text style= {{top:36, fontSize:20}}>Bước 1: Lorem ipsum dolor sit...</Text>
+      <Text style= {{top:36, fontSize:20}} onPress={onGuidePressed}>Bước 1: Lorem ipsum dolor sit...</Text>
       <Image    
         source={Banner} 
         style={{width: '80%', height: null, aspectRatio: 750/460, resizeMode: 'cover', top: 40}}/>
-      <Text style= {{top:44, fontSize:20}}>Bước 2: Lorem ipsum dolor sit...</Text>
+      <Text style= {{top:44, fontSize:20}} onPress={onGuidePressed}>Bước 2: Lorem ipsum dolor sit...</Text>
 
     </View>
   )
